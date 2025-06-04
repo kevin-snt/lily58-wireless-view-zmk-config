@@ -40,11 +40,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans                &trans           &trans         &trans     &trans             &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp AT_SIGN           &kp AMPERSAND    &kp ASTERISK   &kp SQT    &kp GRAVE          &trans
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp NON_US_BACKSLASH  &kp PLUS         &kp MINUS      &kp SLASH  &kp DOUBLE_QUOTES  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp PIPE              &kp EXCLAMATION  &kp SEMICOLON  &kp COLON  &kp QUESTION       &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans                &trans           &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                     &trans     &trans        &trans        &trans        &trans        &trans
+&trans  &kp TAB         &kp HOME      &kp UP_ARROW  &kp END       &kp PAGE_UP                      &kp SLASH  &kp N7        &kp NUMBER_8  &kp N9        &trans        &trans
+&trans  &kp LEFT_SHIFT  &kp LEFT      &kp DOWN      &kp RIGHT     &kp PAGE_DOWN                    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans  &kp C_PREV      &kp C_VOL_DN  &kp K_MUTE    &kp C_VOL_UP  &kp C_NEXT     &trans    &trans  &kp COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                                      &trans        &trans        &trans         &trans    &trans  &trans     &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
