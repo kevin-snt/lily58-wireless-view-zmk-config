@@ -14,13 +14,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         minus_question: minus_question {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp QUESTION>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
     keymap {
