@@ -9,6 +9,13 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+        };
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,7 +32,7 @@
 &kp ESC       &kp N1  &kp N2  &kp N3        &kp N4  &kp N5                                 &kp N6     &kp N7  &kp N8    &kp N9         &kp N0  &kp DELETE
 &kp TAB       &kp Q   &kp C   &kp O         &kp P   &kp W                                  &kp J      &kp M   &kp D     &sl 3          &kp Y   &kp BACKSPACE
 &kp CAPSLOCK  &kp A   &kp S   &kp E         &kp N   &kp F                                  &kp L      &kp R   &kp T     &kp I          &kp U   &kp ENTER
-&kp LSHFT     &kp Z   &kp X   &kp QUESTION  &kp V   &kp B      &kp ENTER    &kp BACKSPACE  &gresc     &kp H   &kp G     &kp SEMICOLON  &kp K   &kp RSHFT
+&kp LSHFT     &kp Z   &kp X   &kp QUESTION  &kp V   &kp B      &kp ENTER    &kp BACKSPACE  &dot_colon     &kp H   &kp G     &kp SEMICOLON  &kp K   &kp RSHFT
                               &kp LALT      &mo 1   &kp SPACE  &kp LCTRL    &kp RCTRL      &kp SPACE  &mo 2   &kp RGUI
             >;
         };
