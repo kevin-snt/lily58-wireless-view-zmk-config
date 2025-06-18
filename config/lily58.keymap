@@ -13,13 +13,13 @@
         minus_question: minus_question {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(N6)>, <&kp LS(M)>;
+            bindings = <&kp N6>, <&kp LS(M)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dot_colon: dot_colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(SEMI)>, <&kp DOT>;
+            bindings = <&kp LS(COMMA)>, <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         coma_semicolon: coma_semicolon {
