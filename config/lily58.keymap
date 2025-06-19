@@ -132,11 +132,11 @@
 
             display-name = "Dev";
             bindings = <
-&trans  &trans      &trans         &trans          &trans             &trans                                  &trans         &trans     &trans                &trans            &trans     &trans
-&trans  &kp RA(N9)  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RIGHT_BRACKET  &kp RS(SINGLE_QUOTE)                    &kp RA(N0)     &kp N1     &kp NON_US_BACKSLASH  &kp SINGLE_QUOTE  &kp GRAVE  &trans
-&trans  &kp RA(N4)  &kp N5         &kp MINUS       &kp RA(EQUAL)      &kp EQUAL                               &kp BACKSLASH  &kp PLUS   &kp N6                &kp LS(DOT)       &kp N3     &trans
-&trans  &kp RA(N2)  &kp RA(N5)     &kp RA(MINUS)   &kp N8             &kp RA(N3)            &trans    &trans  &kp RA(N6)     &kp SLASH  &kp COMMA             &kp DOT           &kp LS(M)  &trans
-                                   &trans          &trans             &trans                &trans    &trans  &trans         &trans     &trans
+&trans  &trans      &trans                &trans                    &trans             &trans                                  &trans      &trans     &trans         &trans       &trans      &trans
+&trans  &kp RA(N9)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp RIGHT_BRACKET  &kp RS(SINGLE_QUOTE)                    &kp RA(N0)  &kp N1     &kp BACKSLASH  &kp N4       &kp RA(N7)  &trans
+&trans  &kp RA(N4)  &kp N5                &kp MINUS                 &kp RA(EQUAL)      &kp EQUAL                               &kp RA(N8)  &kp PLUS   &kp N6         &kp LS(DOT)  &kp N3      &trans
+&trans  &kp RA(N2)  &kp RA(N5)            &kp RA(MINUS)             &kp N8             &kp RA(N3)            &trans    &trans  &kp RA(N6)  &kp SLASH  &kp COMMA      &kp DOT      &kp LS(M)   &trans
+                                          &trans                    &trans             &trans                &trans    &trans  &trans      &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
