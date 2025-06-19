@@ -47,55 +47,37 @@
         macro_a_circ: macro_a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_BRACKET>
-                , <&macro_wait_time 30>
-                , <&kp Q>;
+            bindings = <&kp LEFT_BRACKET>, <&macro_wait_time 30>, <&kp Q>;
         };
 
         macro_o_circ: macro_o_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_BRACKET>
-                , <&macro_wait_time 30>
-                , <&kp O>;
+            bindings = <&kp LEFT_BRACKET>, <&macro_wait_time 30>, <&kp O>;
         };
 
         macro_u_circ: macro_u_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_BRACKET>
-                , <&macro_wait_time 30>
-                , <&kp U>;
+            bindings = <&kp LEFT_BRACKET>, <&macro_wait_time 30>, <&kp U>;
         };
 
         macro_e_circ: macro_e_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_BRACKET>
-                , <&macro_wait_time 30>
-                , <&kp E>;
+            bindings = <&kp LEFT_BRACKET>, <&macro_wait_time 30>, <&kp E>;
         };
 
         macro_i_circ: macro_i_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_BRACKET>
-                , <&macro_wait_time 30>
-                , <&kp I>;
+            bindings = <&kp LEFT_BRACKET>, <&macro_wait_time 30>, <&kp I>;
         };
 
         macro_i_trema: macro_i_trema {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LS(LEFT_BRACKET)>
-                , <&macro_wait_time 30>
-                , <&kp I>;
+            bindings = <&kp LS(LEFT_BRACKET)>, <&macro_wait_time 30>, <&kp I>;
         };
     };
 
@@ -170,11 +152,11 @@
 
             display-name = "deadkey";
             bindings = <
-&trans  &trans         &trans  &trans         &trans         &trans                           &trans     &trans     &trans         &trans                &trans                 &trans
-&trans  &macro_a_circ  &kp N9  &macro_o_circ  &macro_o_circ  &kp LS(MINUS)                    &kp GRAVE  &kp PIPE   &kp N8         &kp LS(LEFT_BRACKET)  &macro_u_circ          &trans
-&trans  &kp N0         &kp N2  &kp N7         &macro_e_circ  &trans                           &kp N5     &kp MINUS  &macro_i_circ  &macro_i_trema        &kp SINGLE_QUOTE       &trans
-&trans  &trans         &trans  &kp RA(E)      &trans         &trans         &trans    &trans  &trans     &trans     &trans         &trans                &kp RA(RIGHT_BRACKET)  &trans
-                               &trans         &trans         &trans         &trans    &trans  &trans     &trans     &trans
+&trans  &trans         &trans  &trans         &trans                 &trans                               &trans                 &trans     &trans         &trans                &trans            &trans
+&trans  &macro_a_circ  &kp N9  &macro_o_circ  &macro_o_circ          &kp LS(MINUS)                        &kp GRAVE              &kp PIPE   &kp N8         &kp LS(LEFT_BRACKET)  &macro_u_circ     &trans
+&trans  &kp N0         &kp N2  &kp N7         &macro_e_circ          &trans                               &kp N5                 &kp MINUS  &macro_i_circ  &macro_i_trema        &kp SINGLE_QUOTE  &trans
+&trans  &trans         &trans  &kp RA(E)      &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &trans    &trans  &kp RA(RIGHT_BRACKET)  &trans     &trans         &trans                &trans            &trans
+                               &trans         &trans                 &trans             &trans    &trans  &trans                 &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
