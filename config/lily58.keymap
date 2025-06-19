@@ -43,6 +43,63 @@
         };
     };
 
+    macros {
+        macro_a_circ: macro_a_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LEFT_BRACKET
+                &delay_ms 30
+                &kp Q
+            >;
+        };
+        macro_o_circ: macro_o_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LEFT_BRACKET
+                &delay_ms 30
+                &kp O
+            >;
+        };
+        macro_u_circ: macro_u_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LEFT_BRACKET
+                &delay_ms 30
+                &kp U
+            >;
+        };
+        macro_e_circ: macro_e_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LEFT_BRACKET
+                &delay_ms 30
+                &kp E
+            >;
+        };
+        macro_i_circ: macro_i_circ {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LEFT_BRACKET
+                &delay_ms 30
+                &kp I
+            >;
+        };
+        macro_i_trema: macro_i_trema {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LS(LEFT_BRACKET)
+                &delay_ms 30
+                &kp I
+            >;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -115,9 +172,9 @@
             display-name = "Raise";
             bindings = <
 &trans  &trans     &trans  &trans     &trans  &trans                       &trans  &trans             &trans  &trans  &trans            &trans
-&trans  &kp A      &kp N9  &kp RA(O)  &kp O   &trans                       &trans  &kp RA(SEMICOLON)  &kp N8  &trans  &kp U             &trans
-&trans  &kp N0     &kp N2  &kp N7     &kp E   &kp RA(N)                    &kp N5  &kp MINUS          &kp I   &kp I   &kp SINGLE_QUOTE  &trans
-&trans  &kp RA(Q)  &trans  &kp RA(E)  &trans  &trans     &trans    &trans  &trans  &trans             &trans  &trans  &trans            &trans
+&trans  &macro_a_circ      &kp N9  &kp RA(O)  &macro_o_circ   &trans                       &kp GRAVE  &kp PIPE  &kp N8  &kp LS(LEFT_BRACKET)  &macro_u_circ             &trans
+&trans  &kp N0     &kp N2  &kp N7     &macro_e_circ   &kp RA(N2)                    &kp N5  &kp MINUS          &macro_i_circ   &macro_i_trema   &kp SINGLE_QUOTE  &trans
+&trans  &trans  &trans  &kp RA(E)  &trans  &trans     &trans    &trans  &trans  &trans             &trans  &trans  &trans            &trans
                            &trans     &trans  &trans     &trans    &trans  &trans  &trans             &trans
             >;
 
