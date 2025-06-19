@@ -47,37 +47,55 @@
         macro_a_circ: macro_a_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &delay_ms 30 &kp Q>;
+            bindings
+                = <&kp LEFT_BRACKET>
+                , <&macro_wait_time 30>
+                , <&kp Q>;
         };
 
         macro_o_circ: macro_o_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &delay_ms 30 &kp O>;
+            bindings
+                = <&kp LEFT_BRACKET>
+                , <&macro_wait_time 30>
+                , <&kp O>;
         };
 
         macro_u_circ: macro_u_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &delay_ms 30 &kp U>;
+            bindings
+                = <&kp LEFT_BRACKET>
+                , <&macro_wait_time 30>
+                , <&kp U>;
         };
 
         macro_e_circ: macro_e_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &delay_ms 30 &kp E>;
+            bindings
+                = <&kp LEFT_BRACKET>
+                , <&macro_wait_time 30>
+                , <&kp E>;
         };
 
         macro_i_circ: macro_i_circ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &delay_ms 30 &kp I>;
+            bindings
+                = <&kp LEFT_BRACKET>
+                , <&macro_wait_time 30>
+                , <&kp I>;
         };
 
         macro_i_trema: macro_i_trema {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_BRACKET) &delay_ms 30 &kp I>;
+            bindings
+                = <&kp LS(LEFT_BRACKET)>
+                , <&macro_wait_time 30>
+                , <&kp I>;
         };
     };
 
